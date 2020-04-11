@@ -96,18 +96,47 @@
 						.col-xl-9 col-lg-9 col-md-9 col-sm-12 col-xs-12
 						{text-align:center;}
 					</style>
-					<h5><p>Cuando creas un repositorio en GitHub, existe un repositorio remoto. Puedes clonar tu repositorio para crear una copia local en tu computadora y sincronizarla entre las dos ubicaciones.</p></h5>
+					<h5><p>Cuando creas un repositorio en GitHub, existe un repositorio remoto. Puedes clonar tu repositorio 
+						para crear una copia local en tu computadora y sincronizarla entre las dos ubicaciones.</p></h5>
 					<h4><b>Crear un repositorio</b></h4>
 					<h5>Para crear un repositorio en Github ingresa a tu cuenta y haz click sobre la opción "New Repository".</h5>
-					<img src="images/Crear Nuevo Repositorio" alt="" style="width: 30px;">
-				
-					<div id="contenido" class="sombra">
-						<article>
-							<div id="Documentos">
-								<iframe class="l1"src='Documentos/GIT_GITHUB.pdf'  frameborder='0'></iframe>
-							</div> 
-						</article>
-					</div>
+					<img src="images/CrearNuevoRepos.png" alt="" style="width: 700px;">
+					<h5>Al aceptar, se creará el repositorio vacío. Una vez creado, 
+						disponemos de varias opciones para empezar a trabajar con este 
+						repositorio online, las cuales veremos en la siguiente sección de la guía.</h5>
+					<img src="images/TestRepos.png" alt="" style="width: 700px;">
+					<h4><b>Configurar repositorio remoto</b></h4>
+					<h5>Cuando se crea un repositorio en Github aparece una pantalla como la que está a continuación. 
+						Copia y pega en la consola las líneas que se indican con la flecha roja:</h5>
+					<img src="images/ConfRepos.png" alt="" style="width: 700px;">
+					<h5>La primera línea configura el repositorio remoto en tu repositorio local. 
+						Esta línea sólo la debes ejecutar una vez por repositorio remoto. <br>
+						En general, para configurar un repositorio remoto se utiliza el siguiente comando:
+						</h5>
+					<img src="images/ComandoGitRemoteAdd.png" alt="" style="width: 700px;">	
+					<h5><p>
+						Nota: aunque es posible tener múltiples repositorios remotos con diferentes nombres, 
+						de ahora en adelante vamos a asumir que sólo tienes uno llamado origin. Si se llama 
+						diferente, debes cambiar origin por el nombre correspondiente en los comandos que lo 
+						requieran. Para consultar el nombre del repositorio remoto ejecuta el comando git remote.
+						Para sincronizar los commits de la rama master con el repositorio remoto por primera vez 
+						se utiliza el siguiente comando (como se muestra en la imagen anterior):
+					</p></h5>
+					<img src="images/ComandoGitPush.png" alt="" style="width: 700px;">
+					<h5>Cuando crees nuevos commits puedes ejecutar el mismo comando sin la opción -u o puedes sólo ejecutar:</h5>	
+					<img src="images/ComandoGitPush1.png" alt="" style="width: 700px;">
+					<h5>Automáticamente git sabe a qué repositorio y rama enviar los nuevos commits (siempre y cuando hayas
+						utilizado la opción -u la primera vez que hiciste el push). <br><br>	
+						Recuerda que los commits no se envían automáticamente al remoto cuando los creas, debes ejecutar git push 
+						para enviarlos.<br><br>
+						
+						<p>Al ejecutar este comando se crea una carpeta llamada node con una copia completa del repositorio original 
+						(la carpeta oculta .git) y el espacio de trabajo (los archivos y carpetas del proyecto). También se configura 
+						un repositorio remoto llamado origin.<br><br></p>
+						<p>Puedes clonar cualquier repositorio público y repositorios privados a los que tengas acceso.<br><br>
+						Al clonar un repositorio únicamente se descarga el historial de la rama master, a continuación veremos cómo 
+						descargar otras ramas.</p>
+					</h5>
 
 				</div>
 
